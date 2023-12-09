@@ -1,0 +1,81 @@
+:host {
+    display: flex;
+    /* background-image: url('/assets/imgs/fon.jpg');
+    background-size: cover; */
+    width: 100%;
+    
+    background-repeat:round;
+    
+    flex-shrink: 1;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+    
+    flex-direction: column;
+    
+}
+.container {
+    display: flex;
+    flex-grow: 1;
+    width: 100vh;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    flex-direction: column;
+    
+   
+}
+nav{
+    display: flex;
+    margin:auto;
+    width: 100%;
+    border-top: 1px solid #9c9c9c;
+    border-bottom: 1px solid #919191;
+   
+}
+
+nav  a{
+    display: flex;
+    padding: 5px;
+    border-left: 1px solid #9c9c9c;
+    text-decoration: none;
+    transition: all 0.5s;
+    color: #7a7a7a;
+    font-size: 17px;
+    display: block;
+    width: 140px;
+    text-align: center;
+    
+}
+
+
+nav a:hover{
+    box-shadow: 0 6px 6px rgba(8, 13, 17, 0.15), 0 0 52px rgba(8, 13, 17, 0.12);
+    color: #373737;
+}
+
+nav .active{
+    background: #919191;
+    color: #030303;
+}
+h3{
+   
+    padding-bottom: 5px;
+}
+main{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border-top: 2px solid rgb(219, 219, 219); */
+   
+}
+
+.examples{
+    position: sticky;
+    top: 100px;
+}
+
+@media (max-width: 800px){
+    nav{
+        display: none;
+    }
+}
